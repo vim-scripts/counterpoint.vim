@@ -1,0 +1,13 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4838
+
+Use Counterpoint to easily cycle between file counterparts (.h, .cpp, .osx.mm, win.cpp, and so on) via the :CounterpointNext and :CounterpointPrevious commands.
+
+Counterpoint works by taking the current file, determining the root file name, and switching between files with the same root but different extensions. This allows Counterpoint to operate on multi-level file extensions instead of just the traditional .h and .cpp pairs, and allows it to cycle in a natural way without any configuration beyond mapping at least one of the command commands in your .vimrc, perhaps like so:
+
+nnoremap <leader>a :CounterpointNext
+
+For feature requests, bugs, better documentation and the latest version, check out the GitHub page:
+
+https://github.com/jpetrie/vim-counterpoint
+
+
